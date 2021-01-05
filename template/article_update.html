@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main  %}
+<h1>Welcome To Update Page </h1>
+<h3>Here You Can Add New Article Tech</h3>
+<br><br>
+
+<form action="" method="POST">
+{% csrf_token %}
+{{form.as_p}}
+
+<input type="submit" value="Update">
+</form>
+{% endblock main  %}
